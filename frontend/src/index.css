@@ -1,0 +1,243 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+header {
+  background: #fff;
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: #333;
+  text-decoration: none;
+}
+.pages{
+  max-width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* homepage */
+.home {
+  /*display: grid;*/
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+.job-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.job-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+.job-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+/*.job-details span {
+  position: relative;
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  display: flex; /* Use flexbox for layout
+  
+} */
+
+.job-details .edit-button{
+  position: absolute;
+  top: 10px; 
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+  right: 60px; 
+}
+.job-details .delete-button {
+  position: absolute;
+  top: 10px; 
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+  right: 10px; 
+}
+
+/* new workout form */
+label, input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+
+select {
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd; /* You can adjust the border style as needed */
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Poppins"; /* You can apply your desired font-family */
+  background: #fff; /* Set the background color as needed */
+  color: #333; /* Set the text color as needed */
+  cursor: pointer;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin-left: 10px;
+}
+nav button {
+
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+  margin-left:10px;
+}
+
+/* auth forms */
+form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.modal-container {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center; /* Align content horizontally at the center */
+  align-items: center; /* Align content vertically at the center */
+  
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: #fff; /* Adjust the background as desired */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 80%; /* Adjust the maximum width as per your requirement */
+  width: 80%; 
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #333;
+  font-size: 20px;
+  z-index: 99999;
+}
+
+button.open-form-button {
+  /* Your existing button styles */
+  background: var(--primary);
+  color: #fff;
+  padding: 10px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-size: 1em;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+  margin-left:auto
+}
+
+
+/* stats button */
+
+button.stats-button {
+  /* Your existing button styles */
+  background: var(--primary);
+  color: #fff;
+  padding: 10px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-size: 1em;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+  margin-left : 10px;
+  
+}
+
+
